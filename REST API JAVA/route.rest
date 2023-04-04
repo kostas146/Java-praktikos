@@ -1,0 +1,22 @@
+GET http://localhost:8080/reviews
+###
+GET http://localhost:8080/reviews/642b5e6188489428adf69372
+###
+
+POST http://localhost:8080/reviews/
+Content-Type: application/json
+
+{
+    "title": "amazing",
+    "description": "amazing super amazing"
+}
+
+###
+DELETE http://localhost:8080/reviews/642b5e6188489428adf69372
+###
+PATCH http://localhost:8080/reviews/642b6689c6d47fa41e1181db
+Content-Type: application/json
+
+{
+    "title": "New data"
+}
